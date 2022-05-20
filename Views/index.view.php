@@ -7,17 +7,15 @@
 
         <div class="post">
             <article>
-                <h2 class="post-title"><a href="../single.php?id=<?php echo $post['id']; ?>"> <?php echo $post['titulo']; ?></a></h2>
-                <p class="post-fecha"><?php echo $post['fecha'] ?></p>
+                <h2 class="post-title"><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['titulo'] ?></a></h2>
+                <p class="post-fecha"><?php echo fecha($post['fecha']); ?></p>
                 <div class="post-thumb">
-                    <a href="#">
+                    <a href="single.php?id=<?php echo $post['id']; ?>">
                         <img src="<?php echo url; ?>/assets/img/<?php echo $post['thumb']; ?>" alt="">
                     </a>
                 </div>
-                <p class="extract">
-                    <?php echo $post['extracto']; ?>
-                </p>
-                <a href="#" class="continued">Ver Mas...</a>
+                <p class="extract"><?php echo $post['extracto']; ?></p>
+                <a href="single.php?id=<?php echo $post['id']; ?>" class="continued">Ver Mas...</a>
             </article>
         </div>
 
@@ -28,5 +26,4 @@
 </div>
 
 <?php
-//require 'Views/paginacion.php';
 require 'Views/Template/footer.php'; ?>
