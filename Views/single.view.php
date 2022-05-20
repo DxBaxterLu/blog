@@ -3,21 +3,18 @@
 <div class="container">
     <div class="post">
         <article>
-            <h2 class="post-title"> Titulo del articulo</h2>
-            <p class="post-fecha">20 de mayo 20221</p>
+            <h2 class="post-title"> <?php echo $post['titulo'] ?></h2>
+            <p class="post-fecha"><?php echo fecha($post['fecha']); ?></p>
             <div class="post-thumb">
-                <a href="#">
-                    <img src="<?php echo url; ?>/assets/img/1.jpg" alt="">
-                </a>
+                <img src="assets/img/<?php echo $post['thumb']; ?>" alt="<?php echo $post['titulo'] ?>">
             </div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo impedit nihil alias similique atque deleniti porro reiciendis dicta nemo cupiditate itaque quis, expedita deserunt inventore optio aut omnis consequatur ea?
-            </p>
+            <!-- Con la funcion nl2br insertamos un salto de linea antes de todas las lineas nuevas de un string. -->
+            <p class="extracto"><?php echo nl2br($post['texto']); ?></p>
         </article>
     </div>
 
 </div>
 
 <?php
-//require 'Views/paginacion.php';
+
 require 'Views/Template/footer.php'; ?>
