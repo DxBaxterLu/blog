@@ -10,7 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo url; ?>assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo url; ?>/assets/css/style.css">
 
     <title>Blog</title>
 </head>
@@ -23,7 +23,7 @@
             </div>
 
             <div class="header-redes">
-                <form name="busqueda" class="buscar" action="<?php echo url; ?> /buscar.php" method="GET">
+                <form name="busqueda" class="buscar" action="<?php echo url; ?>/buscar.php" method="GET">
                     <input type="text" name="busqueda" placeholder="Buscar...">
                     <button type="submit" class="icon fa fa-search"></button>
                 </form>
