@@ -137,7 +137,7 @@ header .menu ul li a:hover {
 }
 
 header .menu ul li a .icon {
-  margin-left: 15px;
+  margin-left: 30px;
 }
 
 /* Publicaciones */
@@ -160,7 +160,7 @@ header .menu ul li a .icon {
   font-size: 28px;
   font-weight: normal;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .post article .post-title a {
@@ -209,7 +209,7 @@ header .menu ul li a .icon {
   color: #fff;
   font-size: 1em;
   font-family: Arial, sans-serif, helvetica;
-  border-radius: 2px;
+  border-radius: 7px;
   border: none;
 }
 
@@ -223,7 +223,7 @@ header .menu ul li a .icon {
   font-size: 28px;
   font-weight: normal;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 /*.post-thumb a img {
