@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $pass = clsData($_POST['pass']);
 
     if ($user == $blog_admin['user'] && $pass == $blog_admin['pass']) {
-        $_SESSION['admin'] = $blog_admin['user'];
+        $_SESSION['Config'] = $blog_admin['user'];
         header('Location:' . url . '/Config');
     }
 }
