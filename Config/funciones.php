@@ -98,3 +98,12 @@ function fecha($fecha)
     $fecha = "$dia de " . $meses[$mes] . " del $year";
     return $fecha;
 }
+
+# Funcion para comprobar la session del admin
+function comprobarSession()
+{
+    // Comprobamos si la session esta iniciada
+    if (!isset($_SESSION['Config'])) {
+        header('Location: ' . url);
+    }
+}
