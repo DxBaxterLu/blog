@@ -37,6 +37,7 @@
                                 <i class="fa fa-instagram"></i>
                             </a></li>
                         <li><a href="#">Contacto <i class="icon fa fa-envelope"></i></a></li>
+                        <li><a href="login.php"><i class="fa fa-user"></i></a></li>
                     </ul>
                 </nav>
 
